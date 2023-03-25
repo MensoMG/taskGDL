@@ -28,6 +28,28 @@ body {
     flex-direction: column;
 }
 
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 12px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #6EBBD3;
+    color: white;
+    cursor: pointer;
+    padding: 30px;
+    background-image: url("/img/top-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#myBtn:hover {
+    background-color: #474444;
+}
+
 header {
     background-image: url("/img/header-bg.png");
     background-size: cover;
