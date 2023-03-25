@@ -36,8 +36,8 @@
         <div class="container">
             <div class="content-sorting">
                 <p>Сортировать по:</p>
-                <button onclick="sortCatalog()" class="btn-sorting btn-sorting-marg">Цене</button>
-                <button class="btn-sorting">Возрасту</button>
+                <button onclick="sortCatalog()" class="btn-sorting btn-sorting-marg" id="myButton">Цене</button>
+                <button class="btn-sorting" id="myButton">Возрасту</button>
             </div>
 
             <div class="cats-catalog" data-sort="desc" id="catalog">
@@ -193,10 +193,18 @@
 
 
     <script>
+        // const myButton = document.getElementById('myButton');
+
+        // myButton.addEventListener('click', function () {
+        //     myButton.classList.add('clicked');
+        // });
+
+
         function sortCatalog() {
             var catalog = document.getElementById("catalog");
             var products = catalog.children;
             var arr = Array.prototype.slice.call(products, 0);
+
             arr.sort(function (a, b) {
                 var aPrice = parseFloat(a.dataset.price);
                 var bPrice = parseFloat(b.dataset.price);

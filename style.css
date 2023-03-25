@@ -96,21 +96,6 @@ main {
     flex: 1;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .content-sorting {
     display: flex;
     margin-bottom: 35px;
@@ -143,8 +128,12 @@ main {
     margin-left: 14px;
     vertical-align: middle;
     background: url("/img/arrow.svg") no-repeat center center;
+    transform: rotate(0deg);
 }
 
+.btn-sorting.clicked::after {
+    transform: rotate(180deg);
+}
 
 .cats-catalog {
     display: flex;
@@ -296,19 +285,6 @@ main {
     line-height: 17px;
     color: #000;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 footer {
     margin-top: auto;
